@@ -49,3 +49,7 @@ Aşağıda bu zafiyetin istismar edildiği demo videosunu izleyebilirsiniz:
 📹 [Demo Videosunu İzle / İndir](demo.mp4)
 
 
+https://github.com/user-attachments/assets/2e5c7a0e-f95f-424f-bfc8-cd9844705398
+
+
+
