@@ -46,6 +46,6 @@ Bu sürümde kullanıcı girdisi doğrudan sistem komutuna verilmediği için za
 
 Aşağıda bu zafiyetin istismar edildiği demo videosunu izleyebilirsiniz:
 
-[📹 Demo Videosunu İndir](./demo.mp4)
+📹 [Demo Videosunu İzle / İndir](demo.mp4)
 
 
