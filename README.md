@@ -41,10 +41,7 @@ bash
 Kopyala
 Düzenle
 python app_secure.py
-🎬 Demo Video
-Aşağıdaki videoda zafiyetin nasıl istismar edildiği gösterilmektedir:
 
-📹 Demo videosunu izlemek için tıklayın
 
 📁 Dosyalar
 app_vuln.py → Zafiyetli versiyon
@@ -55,10 +52,11 @@ demo.mp4 → İstismar videosu
 
 Aşağıda bu zafiyetin istismar edildiği demo videosunu izleyebilirsiniz:
 
-📹 [Demo Videosunu İzle / İndir](demo.mp4)
 
 
-https://github.com/user-attachments/assets/2e5c7a0e-f95f-424f-bfc8-cd9844705398
+
+https://github.com/user-attachments/assets/ee31117c-d74a-4ded-be7d-e4bfa53688dc
+
 
 
 
