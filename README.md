@@ -1,46 +1,55 @@
-# vuln-ping-api
- Komut enjeksiyonuna açık basit bir Flask API uygulaması
+# 🔓 Zafiyetli Flask API – Command Injection
 
-🔓 Zafiyetli Flask Uygulaması: Command Injection
-Bu projede, kullanıcıdan alınan bir IP adresiyle ping işlemi yapan basit bir Flask uygulaması bulunmaktadır. Ancak, kullanıcı girdisi doğrudan sistem komutuna eklendiği için uygulama komut enjeksiyonu (Command Injection) zafiyetine sahiptir.
+Bu projede, kullanıcıdan alınan IP adresini ping’leyen basit bir Flask API uygulaması bulunmaktadır. Uygulamanın zafiyetli versiyonu, kullanıcı girdisini doğrudan sistem komutuna verdiği için **Command Injection** (komut enjeksiyonu) zafiyetine sahiptir.
 
-⚠️ Zafiyet Bilgisi
-Zafiyet Türü: Command Injection
-OWASP Kategorisi: A03:2021 - Injection
-Vector String (CVSS v3.1): AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
-CVSS Skoru: 9.8 (Critical)
-🐍 Kullanım
-Gereksinim:
+---
 
-nginx
-Kopyala
-Düzenle
+## ⚠️ Zafiyet Bilgisi
+
+- **Zafiyet Türü:** Command Injection  
+- **OWASP Kategorisi:** A03:2021 - Injection  
+- **Vector String (CVSS v3.1):** `AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H`  
+- **CVSS Skoru:** **9.8 / 10** (Critical)
+
+---
+
+## 🐍 Gereksinimler
+
+```bash
 pip install flask
-Zafiyetli uygulamayı çalıştırmak için:
-
-nginx
+🚨 Zafiyetli Uygulama: app_vuln.py
+bash
 Kopyala
 Düzenle
 python app_vuln.py
-Tarayıcıda test etmek için:
+Tarayıcıda çalıştırmak için:
 
 arduino
 Kopyala
 Düzenle
 http://127.0.0.1:5000/ping?ip=127.0.0.1
-Zafiyeti tetiklemek için:
+Zafiyeti tetiklemek için (örnek payload):
 
 bash
 Kopyala
 Düzenle
 http://127.0.0.1:5000/ping?ip=127.0.0.1&dir
-Güvenli versiyon:
+✅ Güvenli Versiyon: app_secure.py
+Bu sürümde kullanıcıdan alınan IP adresi filtrelenmekte ve komut, doğrudan parametrelerle çalıştırılmaktadır. Böylece komut enjeksiyonu zafiyeti engellenmiştir.
 
-nginx
+bash
 Kopyala
 Düzenle
-python app_fixed.py
-Bu sürümde kullanıcı girdisi doğrudan sistem komutuna verilmediği için zafiyet ortadan kaldırılmıştır.
+python app_secure.py
+🎬 Demo Video
+Aşağıdaki videoda zafiyetin nasıl istismar edildiği gösterilmektedir:
+
+📹 Demo videosunu izlemek için tıklayın
+
+📁 Dosyalar
+app_vuln.py → Zafiyetli versiyon
+app_secure.py → Güvenli versiyon (fix uygulanmış)
+demo.mp4 → İstismar videosu
 
 ## 🎬 Demo Video
 
